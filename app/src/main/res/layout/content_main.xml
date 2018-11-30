@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:id="@+id/bottom_menu"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/music_player_layout"
+            layout="@layout/bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/recent_added_albums"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded" />
+
+
+        <LinearLayout
+            style="@style/BoxStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="DisableBaselineAlignment">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/album1"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="90sp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/carbonsweet"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/carboon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/album2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90sp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/vekony"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/vekony" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/album3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90sp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/burak"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/burak" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/today_s_top_hits_2017"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded" />
+
+        <LinearLayout
+            style="@style/BoxStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="DisableBaselineAlignment">
+
+
+            <!--2LineFirst Album-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/album4"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="90sp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/swalla"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/swalla" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/album5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90sp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/u2inn"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="U2"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/album6"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="90sp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/starley"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/starley" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="DisableBaselineAlignment">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

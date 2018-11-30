@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="BoxStyle" parent="Theme.AppCompat.Light">
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:background">@drawable/box_background</item>
+
+    </style>
+
+
+
+    <style name="ListStyle" parent="Theme.AppCompat.Light">
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:background">@drawable/list_background</item>
+    </style>
+
+
+    <style name="PlaylistImage2">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+
+    <style name="TextViewStyle" parent="Theme.AppCompat.Light">
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:background">@drawable/text_background</item>
+    </style>
+
+    <style name="SongName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:keepScreenOn">true</item>
+        <item name="android:padding">@dimen/activity_padding_small</item>
+        <item name="android:background">@color/colorArtist</item>
+        <item name="android:textColor">@color/color_text_white</item>
+        <item name="android:textSize">@dimen/activity_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ArtistName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#AAFF213F</item>
+        <item name="android:keepScreenOn">true</item>
+        <item name="android:padding">@dimen/activity_padding_small</item>
+        <item name="android:textColor">@color/color_text_white</item>
+        <item name="android:textSize">@dimen/activity_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
